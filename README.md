@@ -34,8 +34,12 @@ subsequent data transfer (e.g. file request), the client must send the PORT comm
 the server to announce a new port number, e.g. N+2, N+3, etc.. Ports may be reused after some
 time. Please note that your implementation should only use the active FTP mode. The passive
 mode does not need to be implemented.
+
 Once the client disconnects (QUIT command), the TCP control channel must be closed and the
 client should terminate.
+
+![photo](images/photo.png)
+
 
 ### FTP Commands and Replies
 After the establishment of the control TCP connection with the FTPserver, the client process
